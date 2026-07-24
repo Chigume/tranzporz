@@ -1,0 +1,80 @@
+@media only screen and (min-width: 1300px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: calc(var(--main-container) + var(--container-gutters));
+    padding-left: calc(var(--container-gutters) / 2);
+    padding-right: calc(var(--container-gutters) / 2);
+  }
+}
+.container-style2 {
+  max-width: calc(var(--main-container2) + var(--container-gutters));
+  padding-left: calc(var(--container-gutters) / 2);
+  padding-right: calc(var(--container-gutters) / 2);
+  margin: 0 auto;
+}
+.container-style3 {
+  max-width: calc(var(--main-container3) + var(--container-gutters));
+  padding-left: calc(var(--container-gutters) / 2);
+  padding-right: calc(var(--container-gutters) / 2);
+  margin: 0 auto;
+}
+.container-style4 {
+  max-width: calc(var(--main-container4) + var(--container-gutters));
+  padding-left: calc(var(--container-gutters) / 2);
+  padding-right: calc(var(--container-gutters) / 2);
+  margin:0 auto;
+}
+.container-style5 {
+  max-width: calc(var(--main-container5) + var(--container-gutters));
+  padding-left: calc(var(--container-gutters) / 2);
+  padding-right: calc(var(--container-gutters) / 2);
+  margin:0 auto;
+}
+.container-style6 {
+  max-width: calc(var(--main-container6) + var(--container-gutters));
+  padding-left: calc(var(--container-gutters) / 2);
+  padding-right: calc(var(--container-gutters) / 2);
+  margin:0 auto;
+}
+.container-style7 {
+  max-width: calc(var(--main-container7) + var(--container-gutters));
+  padding-left: calc(var(--container-gutters) / 2);
+  padding-right: 0;
+  // padding-right: calc(var(--container-gutters) / 2);
+  margin: 0 0 0 15%;
+}
+
+@media only screen and (max-width: 1600px) {
+  .container-fluid.px-0 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+
+    .row {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+
+}
+
+
+
+@media only screen and (max-width: 1700px){
+    .container-style7 {
+      padding-right: calc(var(--container-gutters) / 2);
+      margin: 0 auto;
+    }
+}
+
+@include xs{
+  .container{
+    padding:  0 15px;
+  }
+}
+
+
+

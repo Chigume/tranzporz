@@ -1,0 +1,111 @@
+.trust-video{
+    position: relative;
+   .trust-img{
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+   }
+   .video-btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+   }
+   .play-btn > i{
+    color: $white-color;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: $theme-color;
+   }
+}
+.progress-box {
+  &:not(:last-child){
+    margin: 0 0 25px 0;
+  }
+  &__number,
+  &__title {
+    font-size: 18px;
+    line-height: 1;
+    font-family: var(--title-font);
+    display: inline-block;
+    margin: 0 0 14px 0;
+    color: $title-color;
+    font-weight: 700;
+  }
+  &__title{
+    // font-family: $body-font;
+    // font-weight: 600;
+    // font-size: 18px;
+    // font-weight: 600;
+  }
+
+  &__number {
+    float: right;
+    margin: 5px 0 0 0;
+    // font-weight: 500;
+    // font-family: $body-font;
+    // color: $theme-color;
+  }
+
+  &__progress {
+    height: 8px;
+    // padding: 5px;
+    border-radius: 8px;
+    background-color: $border-color;
+  }
+
+  &__bar {
+    height: 100%;
+    background-color: $theme-color;
+    box-shadow: 0px 10px 31px rgba(169, 177, 193, 0.17);
+    border-radius: 5px;
+  }
+}
+.progress-area{
+    margin-bottom: 40px;
+}
+.progress-title{
+    font-weight: 800;
+    font-size: 36px;
+    font-family: $title-font;
+}
+.progress-text{
+    margin-bottom: 30px;
+}
+
+.trust-layout1{
+    position: relative;
+    .trust-bg{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        width: 100%;
+        text-align: center;
+        max-height: 560px;
+        height: 100%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+} 
+
+.trust-style1{
+    background-color: $white-color;
+    border-radius: 30px;
+    padding: 60px;
+    box-shadow: 0px 3px 25px -2px rgb(0 0 0 / 8%);
+}
+
+@include xs{
+    .trust-style1 {
+        padding: 30px 15px;
+    }
+}

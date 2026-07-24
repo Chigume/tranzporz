@@ -1,0 +1,80 @@
+.brand-style1{
+  border: 1px solid var(--border-color);
+  background-color: $white-color;
+  .brand-item{
+    text-align: center;
+    padding: 53px 40px;
+    transition: all 0.5s ease;
+    border-right: 1px solid var(--border-color);
+    img{
+      height: 35px;
+      cursor: pointer;
+    }
+    &:hover{
+      img {
+          filter: brightness(0) saturate(100%)
+          invert(24%)
+          sepia(93%)
+          saturate(6466%)
+          hue-rotate(350deg)
+          brightness(95%)
+          contrast(105%);
+        }
+    }
+  }
+}
+.brand-title{
+  text-align: center;
+  font-size: 24px;
+  line-height: 140%;
+  position: relative;
+  margin-bottom: 42px;
+  font-weight: 800;
+  &::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 37%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-color: var(--border-color);;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 37%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-color: var(--border-color);;
+  }
+  .higlight{
+    color: $theme-color;
+    display: inline-block;
+  }
+}
+.brand-layout1{
+  padding: 85px 0;
+}
+@include ml{
+  .brand-title{
+    &::before,
+    &::after{
+      display: none;
+    }
+  }
+}
+@include md{
+  .brand-layout1 {
+    padding: 60px 0;
+  }
+}
+
+@include xs{
+  .brand-style1 .brand-item{
+    padding: 20px 5px;
+  }
+}
+

@@ -1,0 +1,71 @@
+.nice-select .option.focus, .nice-select .option.selected.focus, .nice-select .option:hover {
+    background-color: $border-color;
+}
+
+.nice-select {
+  width: 100%;
+  min-width: 242px;
+  padding-right: 50px;
+  padding-left: 20px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: $body-font;
+  border: 1px solid var(--border-color);
+  color: $text-color;
+  background-color: $body-color;
+  &:hover{
+    color: $white-color;
+    background-color: $theme-color;
+    border-color: $theme-color;
+    &::after{
+      border-color: $white-color;
+    }
+  }
+  .current {
+    font-weight: 400;
+  }
+  .list {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0px;
+    border: 1px solid var(--vs-border-color4);
+    box-shadow: none;
+    font-size: 14px;
+    z-index: 2;
+    color: $title-color;
+    border-radius: 6px;
+    background-color: $border-color;
+    margin-bottom: 0;
+
+    .option.selected{
+      color: $white-color;
+      &:not(:hover){
+        color: $title-color;
+      }
+    }
+    .option:hover{
+      color: $white-color;
+      background-color: $secondary-color;
+    }
+  }
+  &::after {
+    border-bottom: 2px solid $text-color;
+    border-right: 2px solid $text-color;
+    height: 9px;
+    margin-top: -4px;
+    right: 25px;
+    width: 9px;
+  }
+
+  @include sm {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+

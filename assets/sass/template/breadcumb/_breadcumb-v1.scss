@@ -1,0 +1,107 @@
+.breadcumb-menu {
+  span {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+
+    &:after {
+      content: "\f101";
+      position: relative;
+      font-size: 16px;
+      color: $theme-color;
+      padding: 0 5px 0 10px;
+      font-family: $icon-font;
+      top: 2px;
+      @include respond-below(sm) {
+        font-size: 12px;
+        padding-top: 4px;
+      }
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  span {
+    white-space: normal;
+    color: $theme-color;
+    word-break: break-word;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: $title-font;
+    display: inline-flex;
+    align-items: center;
+    a{
+      color: $white-color;
+      &:hover{
+        color: $theme-color;
+      }
+    }
+    @include respond-below(sm) {
+      font-size: 14px;
+    }
+    
+  }
+}
+.breadcumb-menu-wrap{
+  text-align: left;
+}
+.breadcumb-title {
+  color: $white-color;
+  margin-bottom: 16px;
+  font-size: 64px;
+  line-height: 115%;
+  margin-bottom: 5px;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 700;
+  @include respond-below(sm) {
+    margin-bottom: 0px;
+  }
+}
+
+.breadcumb-text {
+  color: var(--silver-color);
+  margin-bottom: 0;
+  max-width: 50%;
+  font-size: 22px;
+  @include respond-below(lg) {
+    max-width: 73%;
+  }
+  @include respond-below(md) {
+    max-width: 90%;
+  }
+  @include respond-below(sm) {
+    max-width: 100%;
+    font-size: 17px;
+  }
+}
+.breadcumb-wrapper {
+  padding: 160px 0 160px;
+  background-color: var(--title-color);
+  position: relative;
+  z-index: 1;
+  @include md {
+    padding: 100px 0;
+  }
+  @include respond-below(sm) {
+    padding: 100px 0 50px;
+    .breadcumb-title{
+      font-size: 32px;
+    }
+  }
+}
+
+@include md {
+  .breadcumb-title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .breadcumb-menu {
+    margin-top: 15px;
+  }
+}

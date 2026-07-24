@@ -1,0 +1,454 @@
+.vs-hero{
+  .hero-subtitle{
+    color: $white-color;
+    font-family: $title-font;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-flex;
+    padding: 0 55px;
+    &::after{
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      left: 0px;
+      background-color: $white-color;
+      width: 35px;
+      height: 1px;
+    }
+    &::before{
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      right: 0px;
+      background-color: $white-color;
+      width: 35px;
+      height: 1px;
+    }
+  }
+  .hero-title{
+    color: $white-color;
+    font-weight: 800;
+    font-size: 74px;
+    line-height: 114%;
+    margin: 0 auto 28px auto;
+    max-width: 12ch;
+    span{
+      display: inline-block;
+      color: $theme-color;
+    }
+  }
+  .hero-text{
+    color: $white-color;
+    padding-right: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 32px;
+    text-transform: capitalize;
+  }
+  .vs-btn{
+    padding: 17px 36px;
+  }
+  
+}
+.hero-layout1{
+  background-color: $theme-color;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  .hero-box{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    max-width: 467px;
+   
+    .subtract-box{
+       padding: 77px 95px;
+       background: #DF1119;
+       background: linear-gradient(360deg, rgba(223, 17, 25, 0.5) 49%, rgba(255, 107, 113, 0) 100%);
+    }
+    .subtract-title{
+      color: $white-color;
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 30px;
+      font-family: $title-font;
+      display: block;
+    }
+    .subtract-text{
+      color: $white-color;
+      margin-bottom: 30px;
+      padding-bottom: 25px;
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        width: 82px;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: $white-color;
+      }
+    }
+    .box-img{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  &.vs-hero .hero-title {
+    max-width: 15ch;
+    text-transform: capitalize;
+  }
+}
+.info-box{
+    width: 220px;
+    height: 220px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white-color;
+    border-radius: 50%;
+    border: 15px solid $title-color;
+    position: relative;
+    .info-img{
+        position: relative;
+        z-index: 1;
+    }
+    .info-text {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      width: 100%;
+      max-width: 190px;
+  }
+}
+.info-style1 {
+    position: absolute;
+    top: -80px;
+    left: -55px;
+}
+.img-box1{
+    position: relative;
+}
+.hero-item {
+  text-align: center;
+}
+.custom-arraw {
+    position: absolute;
+    display: block;
+    .icon-arraw{
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+      .icon-btn{
+          width: 55px;
+          height: 55px;
+          line-height: 55px;
+          font-size: 15px;
+          border: none;
+          border-radius: 5px;
+          color: $theme-color;
+          background-color: $white-color;
+          &:hover{
+            color: $white-color;
+            background-color: $secondary-color;
+          }
+      }
+      display: inline-flex;
+    }
+}
+.hero-layout2{
+  position: relative;
+  overflow: hidden;
+  .hero-content{
+    text-align: left;
+    padding: 45px 0px 45px 35px;
+    position: relative;
+    border-left: 10px solid var(--theme-color);
+    z-index: 1;
+    border-radius: 10px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35%;
+      height: 10px;
+      left: 0;
+      bottom: 0;
+      background-color: var(--theme-color);
+      border-radius: 0 10px 10px 0px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 15%;
+        height: 10px;
+        left: 0;
+        top: 0;
+        background-color: var(--theme-color);
+        border-radius: 0 10px 10px 0px;
+    }
+  }
+  .hero-title{
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .hero-subtitle{
+    padding-right: 0;
+    margin-bottom: 12px;
+    &::before{
+      display: none;
+    }
+  }
+  .hero-item{
+    padding: 130px 0;
+
+  }
+  .hero-shape1{
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+    display: inline-flex;
+  }
+  .hero-text{
+    font-size: 18px;
+    line-height: 155%;
+    max-width: 50ch;
+  }
+  .hero-shape2 {
+    z-index: 1;
+  }
+  .hero-shape3{
+    z-index: 0;
+  }
+}
+.hero-item{
+  position: relative;
+  padding: 310px 0 250px;
+  z-index: 1;
+}
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  .play-btn {
+    width: 40px;
+    height: 40px;
+    &::after,
+    &::before{
+      background-color: $theme-color;
+    }
+    i{
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      color: $white-color;
+      background-color: $theme-color;
+      &:hover{
+        color: $title-color;
+        background-color: $white-color;
+      }
+    }
+    &:hover{
+    &::after,
+    &::before{
+        background-color: $white-color;
+      }
+    }
+  }
+  .btn-text{
+    color: $white-color;
+    margin-bottom: 0;
+  }
+  .btn-wrap{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.hero-layout3{
+  position: relative;
+  .hero-title {
+    max-width: 100%;
+    text-transform: capitalize;
+  }
+  .hero-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    animation: zoom 20s ease-in-out infinite;
+  }
+  .hero-item {
+    position: relative;
+    padding: 295px 0 215px;
+    z-index: 1;
+  }
+}
+.vs-swiper-button-prev {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.vs-swiper-button-next {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.vs-hero__active--zoom .swiper-slide-active:not(.swiper-slide-duplicate) {
+    .vs-hero__anim {
+      animation-fill-mode: both;
+      animation-name: fadeInUp;
+      opacity: 1;
+      animation-duration: 1s;
+    }
+}
+.cd-headline.clip .cd-words-wrapper::after{
+  display: none;
+}
+@media (max-width: 1660px){
+  .info-style1 {
+    top: 0;
+    left: 0;
+  }
+}
+@media (max-width: 1540px){
+  .hero-layout1 .hero-box{
+    right: -10%;
+    top: 20%;
+    .subtract-box{
+      display: none;
+    }
+    .img-box1{
+      .img{
+        display: none;
+      }
+      .info-box{
+        border-color: $white-color;
+      }
+    }
+  } 
+}
+@media (max-width: 1299px){
+.hero-layout1 .hero-box{
+    right: -15%;
+    top: 20%;
+  }
+}
+@include lg{
+  .hero-layout1 .hero-box {
+        right: -19%;
+        top: 16%;
+    }
+  .header-layout3 .header-logo::before {
+    right: 16px;
+    width: 250px;
+  }
+  .hero-item {
+    padding: 310px 0 120px;
+
+  }
+  .vs-swiper-button-prev{
+    left: 5%;
+  }
+  .vs-swiper-button-next{
+    right: 5%;
+  }
+}
+@include md{
+  .vs-hero{
+    .hero-item {
+      position: relative;
+      padding: 120px 0 80px;
+    }
+
+    .custom-arraw{
+      display: none;
+    }
+    .hero-title{
+      font-size: 52px;
+    }
+  } 
+  .hero-layout1 .hero-box{
+    display: none;    
+  }
+   .hero-layout3 .hero-item {
+    padding: 240px 0 120px;
+  }
+  .hero-layout2{
+    &.vs-hero .hero-item {
+        padding: 80px 0 80px;
+    }
+  }
+}
+@include sm{
+  .vs-hero .hero-title {
+      font-size: 52px;
+  }
+}
+@include xs{
+  .vs-hero .hero-title {
+      font-size: 38px;
+  }
+  .hero-item {
+    position: relative;
+    padding: 80px 0 80px;
+  }
+  .hero-layout1{
+    &.style2{
+       .hero-content {
+        padding: 0;
+      }
+    }
+  }
+  .hero-layout3 .hero-item {
+    padding: 200px 0 80px;
+  }
+  .vs-hero .hero-subtitle{
+    font-size: 14px;
+    padding: 0px 45px;
+  }
+  .hero-layout2 .hero-content {
+    padding: 40px 0px 40px 20px;
+  }
+}
+@media (max-width: 399px){
+  .vs-hero{
+    .hero-title {
+      font-size: 30px;
+    }
+  } 
+  
+}
+@media (max-width: 370px){
+  .vs-hero{
+    .hero-subtitle{
+      padding: 0;
+      &::after,
+      &::before{
+        display: none;
+      }
+    }
+  } 
+  
+}
+
+
+
+
+

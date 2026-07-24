@@ -1,0 +1,143 @@
+.price-btn{
+    .vs-btn{
+        width: 100%;
+    }
+}
+
+.package-name{
+    font-size: 24px;
+    font-weight: 800;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    margin-bottom: 0;
+    transform: rotate(-90deg);
+}
+
+.package-price{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 100%;
+    color: $title-color;
+    font-family: $title-font;
+    margin-bottom: 10px;
+    sub{
+        margin: 0;
+        line-height: 100%;
+        display: contents;
+        font-size: 18px;
+    }
+}
+
+.package-icon{
+    margin-bottom: 40px;
+}
+
+.duration{
+    font-size: 18px;
+    color: $text-color;
+    font-family: $title-font;
+    font-weight: 800;
+}
+
+
+.package-top{
+    border-bottom: 1px solid #D8DDE1;
+    padding-bottom: 32px;
+    margin-bottom: 35px;
+}
+
+
+.package-style1{
+    padding: 40px;
+    box-shadow: 0 5px 20px -2px rgb(0 0 0 / 20%);
+    position: relative;
+    border-radius: 10px;
+    background-color: $white-color;
+    transition: all 0.5s ease;
+    .list-style1{
+        margin-bottom: 30px;
+        .disable{
+            opacity: 0.5;
+        }
+        ul{
+            li{
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .shape1 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .shape2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    &:hover{
+        background-color: $title-color;
+        .shape1,
+        .shape2{
+            opacity: 0;
+            visibility: hidden;
+        }
+        .duration,
+        .package-price,
+        .package-name{
+            color: $white-color;
+        }
+        .list-style1 ul li{
+            color: $white-color;
+        }
+        .price-btn{
+            .vs-btn{
+                color: $theme-color;
+                background-color: $white-color;
+                &:hover{
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
+
+.package-filter{
+    ul{
+        background-color: $theme-color2;
+        border-radius: 30px;
+        display: inline-flex;
+        li{
+            .vs-btn {
+                color: $title-color;
+                background-color: $theme-color2;
+                text-transform: uppercase;
+                &:hover{
+                    color: $white-color;
+                }
+                &.active{
+                    color: $white-color;
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+@include xs{
+    .package-style1 {
+        padding: 40px 20px;
+    }
+}

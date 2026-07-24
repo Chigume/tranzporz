@@ -1,0 +1,221 @@
+.team-style1{
+    position: relative;
+    border-radius: 20px;
+    padding: 20px 5px 10px 22px;
+    clip-path: polygon(0 0, 78% 0, 100% 13%, 100% 100%, 0 100%, 0% 60%, 0 24%);
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 92%;
+        left: 0;
+        top: 0;
+        border: 2px solid #D8DDE1;
+        border-radius: 10px;
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+    .team-img{
+        border-radius:10px  10px 0 0;
+        overflow: hidden;
+        img{
+            width: 100%;
+            transform: scale(1);
+            transition: all 0.5s ease;
+        }
+    }
+    .team-title{
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 5px;
+        a{
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+
+    .team-content{
+        position: relative;
+        padding: 30px 20px 25px 20px;
+        background-color: $white-color;
+        border-radius: 0 0 10px  10px;
+        // box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 10px -2px;
+        box-shadow: rgb(63 20 20 / 18%) 0px 5px 15px -8px;
+    }
+    .social-media{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+    .team-text{
+        color: $theme-color;
+        margin-bottom: 0;
+    }
+    &:hover{
+        &::after{
+            border-color: $theme-color;
+        }
+        .team-img{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.team-details{
+    .team-img{
+        background-color: #ECF1F5;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 30px;
+        img{
+            overflow: hidden;
+            width: 100%;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+        }
+    }
+    .details-title{
+        font-size: 30px;
+        margin-bottom: 5px;
+        line-height: 132%;
+    }
+    .details-desi{
+        color: $theme-color;
+        font-weight: 500;
+    }
+    .social-links{
+        li{
+            a{
+                width: 46px;
+                height: 46px;
+                line-height: 46px;
+                font-size: 16px;
+                color: $title-color;
+                background-color: #ECF1F5;
+                border-radius: 3px;
+                &:hover{
+                    color: $white-color;
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+    .details-text{
+        margin-bottom: 25px;
+    }
+
+
+
+    .details-content{
+        margin-top: 60px;
+        .details-title{
+            font-size: 36px;
+            line-height: 127%;
+        }
+        @include md{
+            margin-top: 40px;
+        }
+        .details-title{
+            margin-bottom: 26px;
+        }
+    }
+}
+.team-contact-list {
+    padding-left: 0;
+    margin-bottom: 30px;
+
+    li {
+        position: relative;
+        color: $title-color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 32px;
+        display: flex;
+
+        @include xs {
+            flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    sub {
+        display: inline-block;
+        width: 210px;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 10px;
+        font-family: $title-font;
+        color: $title-color;
+        text-transform: capitalize;
+
+        @include xs {
+            bottom: 0;
+            line-height: 1;
+        }
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 16px;
+        color: $text-color;
+    }
+}
+.working-exp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.exp-item{
+    .exp-title{
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        line-height: 140%;
+    }
+    .exp-desi{
+        margin-bottom: 0;
+    }
+}
+.exp-area {
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+.details-form{
+    margin-top: 50px;
+    .form-style1{
+        text-align: center;
+        padding: 60px 40px;
+        background-color: $white-color;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        .vs-btn{
+            color: $white-color;
+            border-radius: 5px;
+            background-color: $theme-color;
+            &::after,
+            &::before{
+                background-color: $title-color;
+            }
+        }
+        .form-group i{
+            color: $text-color;
+        }
+        .nice-select{
+            border-radius: 5px;
+            &::after{
+                border-color: $text-color;
+            }
+        }
+        .form-control{
+            border-radius: 5px;
+        }
+    }
+    
+}

@@ -1,0 +1,15 @@
+.form-control[type="date"]::-webkit-inner-spin-button,
+.form-control[type="date"]::-webkit-calendar-picker-indicator,
+.form-control[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  margin-right: -20px;
+  position: relative;
+  z-index: 9;
+}
+
+
+
+

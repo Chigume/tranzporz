@@ -1,0 +1,565 @@
+
+.service-style1{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: $white-color;
+    padding: 30px;
+    .service-icon{
+        margin-bottom: 20px;
+    }
+    .service-text{
+        margin-bottom: 22px;
+        transition: all 0.5s ease;
+    }
+    .vs-btn1{
+        color: $theme-color;
+    }
+    .service-content{
+        position: relative;
+        z-index: 1;
+    }
+     .service-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &:hover{
+        .service-bg{
+            opacity: 1;
+            visibility: visible;
+        }
+        .service-title{
+            a{
+                color: $white-color;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        .service-text{
+            color: $white-color;
+        }
+        .vs-btn1{
+            color: $white-color;
+            &:hover{
+                color: $theme-color;
+            }
+        }
+        .icon-btn{
+            border-color: $white-color;
+            i{
+                color: $theme-color;
+                background-color: $white-color;
+            }
+        }
+        .service-icon{
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
+}
+
+.service-title{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 140%;
+    border-bottom: 2px solid $border-color;
+    padding-bottom: 12px;
+    a{
+        color: $title-color;
+        transition: all 0.5s ease;
+    }
+}
+
+.service-style2{
+    background-color: $body-color;
+    padding: 55px 60px 52px 60px;
+    position: relative;
+    transition: all 0.5s ease;
+    .service-number{
+        font-family: var(--title-font);
+        font-size: 30px;
+        color: transparent;
+        -webkit-text-stroke: 1px $title-color;
+        font-weight: 800;
+        display: block;
+        transition: all 0.5s ease;
+    }
+    .service-text{
+        margin-bottom: 0;
+        position: relative;
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+    .service-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 1;
+    }
+    .service-title{
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 1;
+    }
+    .service-shape{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &:hover{
+        background-color: $theme-color;
+        .service-shape{
+            opacity: 0;
+            visibility: hidden;
+        }
+        .service-title{
+            a{
+                color: $white-color;
+                &:hover{
+                    color: $title-color;
+                }
+            }
+            
+        }
+        .service-text{
+            color: $white-color;
+        }
+        .service-number{
+                -webkit-text-stroke: 1px $white-color;
+        }
+        .service-icon{
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+}
+
+.service-layout2{
+    .service-item{
+        &:not(:last-child){
+            border-right: 1px solid $theme-color;
+        }
+    }
+}
+
+/* ================================
+   Bottom Controls
+================================ */
+
+.vs-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+/* fraction */
+.vs-fraction {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 700;
+  color: $theme-color;
+}
+
+.vs-fraction span {
+    font-size: 22px;
+    font-weight: 700;
+    min-width: 30px;
+}
+
+/* progress line */
+.vs-line {
+  width:500px;
+  height: 3px;
+  background: $border-color;
+  position: relative;
+  overflow: hidden;
+}
+
+.vs-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: var(--progress, 25%);
+  background-color: $theme-color;
+  transition: .4s ease;
+}
+
+/* arrows */
+.vs-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.vs-arrows button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: $theme-color;
+  color: $white-color;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.vs-arrows button:hover {
+  background-color: $title-color;
+}
+.service-style3{
+    position: relative;
+    padding-bottom: 183px;
+    .service-title{
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .service-top {
+        display: inline-flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 25px;
+    }
+    .service-content{
+        background-color: $white-color;
+        padding: 30px;
+        max-width: 90%;
+        width: 100%;
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -42%);
+        z-index: 1;
+        box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.041);
+        transition: all 0.5s ease;
+    }
+    .service-icon{
+        width: 100%;
+        max-width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        background-color: $theme-color;
+        border-radius: 5px;
+    }
+    .service-text{
+        text-transform: capitalize;
+        border-bottom: 1px dashed $text-color;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+        transition: all 0.5s ease;
+    }
+    .vs-btn1{
+        .icon-btn{
+            border-color: $title-color;
+            i{
+                background-color: $title-color;
+            }
+        }
+    }
+    .service-img{
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        img{
+            width: 100%;
+            transform: scale(1);
+            transition: all 0.5s ease;
+        }
+    }
+    &:hover{
+        .service-content{
+            background-color: $title-color;
+        }
+        .service-img{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        .service-title{
+            a{
+                color: $white-color;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        .service-text{
+            color: $white-color;
+            border-color: $white-color;
+        }
+        .vs-btn1{
+            color: $theme-color;
+            .icon-btn{
+                border-color: $theme-color;
+                i{
+                    background-color: $theme-color;
+                }
+            }
+            &:hover{
+                color: $white-color;
+                .icon-btn{
+                    border-color: $white-color;
+                    i{
+                        color: $title-color;
+                        background-color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.service-style4{
+    position: relative;
+    padding-bottom: 137px;
+    .service-title{
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 18px;
+        &:hover{
+            a{
+                color: $theme-color;
+            }
+        }
+    }
+    .service-top {
+        position: relative;
+    }
+   
+    .service-content{
+        background-color: $white-color;
+        padding: 30px;
+        max-width: 90%;
+        width: 100%;
+        border-radius: 10px 10px 80px 80px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -42%);
+        z-index: 1;
+        box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.041);
+        transition: all 0.5s ease;
+    }
+    .service-icon{
+        width: 100%;
+        max-width: 70px;
+        height: 80px;
+        line-height: 70px;
+        text-align: center;
+        background-color: $theme-color;
+        border-radius: 0 0 50% 50%;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        transition: all 0.5s ease;
+    }
+    .service-text{
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        transition: all 0.5s ease;
+    }
+    .btn-area{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .vs-btn1{
+        .icon-btn{
+            border-color: $theme-color;
+            i{
+                background-color: $theme-color;
+            }
+            &:hover{
+                border-color: $title-color;
+
+                i{
+                    background-color: $title-color;
+                }
+            }
+        }
+    }
+    .service-img{
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        border-radius: 10px 10px 30px 30px;
+        img{
+            width: 100%;
+            transform: scale(1);
+            transition: all 0.5s ease;
+        }
+    }
+    &:hover{
+        .service-icon{
+            background-color: $title-color;
+        }
+        .service-img{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.notice-box1 {
+    position: relative;
+    max-width: 625px;
+    margin: 50px auto 0 auto;
+    .service-notice{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        color: $title-color;
+        background-color: $white-color;
+        font-size: 16px;
+        gap: 10px;
+        line-height: 120%;
+        border-radius: 30px;
+        padding-left: 20px;
+        font-weight: 500;
+        position: relative;
+        height: 56px;
+         &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 2px dashed $border-color;
+            border-radius: 30px;
+        }
+    }
+    .vs-btn{
+        border-radius: 0 30px 30px 0;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: -1px;
+        padding: 15px 30px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1399px){
+    .service-style2 {
+        padding: 40px 30px;
+    }
+}
+
+
+@include xl{
+    .service-style2 {
+        padding: 55px 40px 52px 40px;
+    }
+}
+
+@include lg{
+   .service-layout2{
+        padding: 60px 0 0 0;
+        .service-item:not(:last-child){
+            border: none;
+        }
+        .container-fluid{
+            padding: 0 15px ;
+        }
+   } 
+}
+
+
+@include md {
+  .vs-controls {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .vs-line{
+    width: 200px;
+  }
+  .notice-box1{
+    display: block;
+    text-align: center;
+    .vs-btn{
+        margin-top: 30px;
+        position: relative;
+        border-radius: 30px;
+    }
+    .service-notice{
+        justify-content: center;
+        padding: 0 15px;
+    }
+  } 
+  .service-style3 {
+    padding-bottom: 195px;
+  }
+  
+}
+
+@include sm{
+    .service-style2 {
+        padding: 30px 15px;
+    }
+    .notice-box1 {
+        margin: 30px auto 0 auto;
+    }
+}
+@include xs{
+    .service-style2 {
+        padding: 40px 30px;
+    }
+    .service-style3 .service-top {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 360px){
+    .service-style3 {
+        position: relative;
+        padding-bottom: 190px;
+        .service-title{
+            font-size: 20px;
+        } 
+        .service-top {
+            gap: 8px;
+        }
+        .service-content {
+            padding: 20px 15px;
+        }
+    }
+}
+
+
+

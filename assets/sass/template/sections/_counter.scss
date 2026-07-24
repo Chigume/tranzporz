@@ -1,0 +1,37 @@
+.vs-counter{
+   .media-count{
+      display: inline-flex;
+      font-family: $title-font;
+      margin-bottom: 0px;
+  }
+  .media-title{
+      margin-bottom: 0;
+  }
+  .media-title{
+      color: $white-color;
+      font-family: $title-font;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: normal;
+      margin: 0;
+  }
+  .media-text{
+      color: $white-color;
+      font-family: $body-font;
+      font-size: 18px;
+      text-transform: capitalize;
+      margin-bottom: 0;
+      font-weight: 500;
+      line-height: 100%;
+  }
+  .count-icon{
+      color: $white-color;
+      font-size: 48px;
+      display: inline-block;
+      font-weight: 600;
+      position: relative;
+      line-height: normal;
+  }
+}
+
+
